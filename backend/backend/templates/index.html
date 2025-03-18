@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Медицинский сервис</title>
+</head>
+<body>
+    <h1>Медицинский сервис</h1>
+    <form action="/schedule" method="GET">
+        <button type="submit">Создать расписание</button>
+    </form>
+    <br>
+    <form action="/schedules" method="GET">
+        <label for="user_id_schedules">User ID:</label>
+        <input type="text" id="user_id_schedules" name="user_id" placeholder="Введите user_id" required>
+        <button type="submit">Список расписаний пользователя</button>
+    </form>
+    <br>
+    <form action="/schedule" method="GET">
+        <label for="user_id_schedule">User ID:</label>
+        <input type="text" id="user_id_schedule" name="user_id" placeholder="Введите user_id" required>
+        <label for="schedule_id">Schedule ID:</label>
+        <input type="text" id="schedule_id" name="schedule_id" placeholder="Введите schedule_id" required>
+        <button type="submit">Данные о расписании</button>
+    </form>
+    <br>
+    <form action="/next_takings" method="GET">
+        <label for="user_id_takings">User ID:</label>
+        <input type="text" id="user_id_takings" name="user_id" placeholder="Введите user_id" required>
+        <button type="submit">Ближайшие приемы таблеток</button>
+    </form>
+</body>
+</html>

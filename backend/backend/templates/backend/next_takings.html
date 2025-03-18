@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ближайшие приемы</title>
+</head>
+<body>
+    <h1>Ближайшие приемы для пользователя {{ user_id }}</h1>
+    <ul>
+        {% for taking in takings %}
+            <li>
+                <strong>{{ taking.medicament_name }}</strong> в {{ taking.time }}
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'index' %}">
+        <button type="button">Вернуться на главную</button>
+    </a>
+</body>
+</html>

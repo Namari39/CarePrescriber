@@ -1,0 +1,156 @@
+[
+    {
+        "model": "backend.Schedule",
+        "pk": 1,
+        "fields": {
+            "medicament_name": "Аспирин",
+            "frequency": 3,
+            "duration_days": 7,
+            "is_permanent": false,
+            "user_id": 123
+        }
+    },
+    {
+        "model": "backend.Schedule",
+        "pk": 2,
+        "fields": {
+            "medicament_name": "Парацетамол",
+            "frequency": 2,
+            "duration_days": null,
+            "is_permanent": true,
+            "user_id": 123
+        }
+    },
+    {
+        "model": "backend.Schedule",
+        "pk": 3,
+        "fields": {
+            "medicament_name": "Ибупрофен",
+            "frequency": 9,
+            "duration_days": 10,
+            "is_permanent": false,
+            "user_id": 123
+        }
+    },
+    {
+        "model": "backend.Schedule",
+        "pk": 4,
+        "fields": {
+            "medicament_name": "Витамин C",
+            "frequency": 4,
+            "duration_days": 14,
+            "is_permanent": false,
+            "user_id": 321
+        }
+    },
+    {
+        "model": "backend.Schedule",
+        "pk": 5,
+        "fields": {
+            "medicament_name": "Анальгин",
+            "frequency": 4,
+            "duration_days": 14,
+            "is_permanent": false,
+            "user_id": 321
+        }
+    },
+    {
+        "model": "backend.Schedule",
+        "pk": 6,
+        "fields": {
+            "medicament_name": "Максиколд",
+            "frequency": 4,
+            "duration_days": 3,
+            "is_permanent": false,
+            "user_id": 321
+        }
+    },
+    {
+        "model": "backend.Schedule",
+        "pk": 7,
+        "fields": {
+            "medicament_name": "Витамин D",
+            "frequency": 4,
+            "duration_days": null,
+            "is_permanent": true,
+            "user_id": 111
+        }
+    },
+    {
+        "model": "backend.Schedule",
+        "pk": 8,
+        "fields": {
+            "medicament_name": "Нурофен",
+            "frequency": 4,
+            "duration_days": 4,
+            "is_permanent": false,
+            "user_id": 111
+        }
+    },
+    {
+        "model": "backend.Schedule",
+        "pk": 9,
+        "fields": {
+            "medicament_name": "Аспирин",
+            "frequency": 10,
+            "duration_days": 14,
+            "is_permanent": false,
+            "user_id": 111
+        }
+    },
+    {
+        "model": "backend.Schedule",
+        "pk": 10,
+        "fields": {
+            "medicament_name": "Витамин C",
+            "frequency": 11,
+            "duration_days": 14,
+            "is_permanent": false,
+            "user_id": 111
+        }
+    },
+    {
+        "model": "backend.Schedule",
+        "pk": 11,
+        "fields": {
+            "medicament_name": "Арбидол",
+            "frequency": 4,
+            "duration_days": 7,
+            "is_permanent": false,
+            "user_id": 111
+        }
+    },
+    {
+        "model": "backend.Schedule",
+        "pk": 12,
+        "fields": {
+            "medicament_name": "Амоксиклав",
+            "frequency": 2,
+            "duration_days": 10,
+            "is_permanent": false,
+            "user_id": 222
+        }
+    },
+    {
+        "model": "backend.Schedule",
+        "pk": 13,
+        "fields": {
+            "medicament_name": "Витамин E",
+            "frequency": 4,
+            "duration_days": null,
+            "is_permanent": true,
+            "user_id": 222
+        }
+    },
+    {
+        "model": "backend.Schedule",
+        "pk": 14,
+        "fields": {
+            "medicament_name": "Витамин C",
+            "frequency": 9,
+            "duration_days": 14,
+            "is_permanent": false,
+            "user_id": 222
+        }
+    }
+]

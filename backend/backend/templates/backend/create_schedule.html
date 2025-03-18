@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Создать расписание</title>
+</head>
+<body>
+    <h1>Создать расписание</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Сохранить</button>
+    </form>
+    <a href="{% url 'index' %}">
+        <button type="button">Вернуться на главную</button>
+    </a>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Детали расписания</title>
+</head>
+<body>
+    <h1>Детали расписания</h1>
+    <p><strong>Название лекарства:</strong> {{ schedule.medicament_name }}</p>
+    <p><strong>Периодичность:</strong> {{ schedule.frequency }} раз в день</p>
+    <p><strong>Продолжительность лечения:</strong>
+        {% if schedule.is_permanent %}
+            Постоянное применение
+        {% else %}
+            {{ schedule.duration_days }}
+            {% if schedule.duration_days == 1 %}
+                день
+            {% elif schedule.duration_days >= 2 and schedule.duration_days <= 4 %}
+                дня
+            {% else %}
+                дней
+            {% endif %}
+        {% endif %}
+    </p>
+
+    <p><strong>Идентификатор пользователя:</strong> {{ schedule.user_id }}</p>
+    
+    <h2>Время приема на сегодня:</h2>
+    <ul>
+        {% for time in takings %}
+            <li>{{ time }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'index' %}">
+        <button type="button">Вернуться на главную</button>
+    </a>
+</body>
+</html>
